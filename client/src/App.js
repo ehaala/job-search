@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Header from './Header';
 import Homepage from './Homepage';
 import Main from './Main';
 import Movie from './Movie';
@@ -17,13 +17,19 @@ class App extends Component {
 
       <Router>
         <div>
-        <nav className="App-title App ">
+        <nav >
         <Link to="/">Home</Link>{' '}
          <Link to="/Main">See Our Main blog</Link>{' '}
          <Link to="/Movie">See Our Movie blog!</Link>
          <Link to="/Food">See Our Food blog!</Link>
+
          <Link to="/Favorites">Favorites!</Link>
+
+         
+         <Header />
+
         </nav>
+          
           <Route exact path="/" component={Homepage} />
           <Route path="/main" component={Main} />
           <Route path="/movie" component={Movie} />
@@ -32,6 +38,7 @@ class App extends Component {
 
         </div>
       </Router>
+     
     )
   }
 }
