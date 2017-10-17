@@ -52,7 +52,7 @@ class Homepage extends Component {
     let full = url + query + display;
     fetch(full)
       .then(response => response.json())
-      .then(response => this.setState({
+      .then(response => response.listings.listing.length && this.setState({
         title: response.listings.listing[0].title,
         company: response.listings.listing[0].company.name,
         location: response.listings.listing[0].company.location.name,
@@ -63,7 +63,7 @@ class Homepage extends Component {
 
   render() {
     return (
-      <ul className="App">
+      <div className="App">
 
         <div className="card__image border-tlr-radius firstImg">
         <img src="https://static.pexels.com/photos/27406/pexels-photo-27406.jpg" alt="animal" className="border-tlr-radius" />
@@ -87,7 +87,7 @@ class Homepage extends Component {
             <button type="submit">Add to favorites</button>
           </form>
           <p>Search key: {this.state.value}</p>
-      </ul>
+      </div>
     );
   }
 }
