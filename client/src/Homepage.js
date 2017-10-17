@@ -14,7 +14,6 @@ class Homepage extends Component {
     }
   }
 
-
   componentDidMount() {
     let url = "https://authenticjobs.com/api/?api_key=cbfee583fa92882f7d2472043cebdcd4&format=json&method=aj.jobs.search&keywords=";
     let query = this.state.value;
