@@ -8,9 +8,8 @@ var jobSchema = new mongoose.Schema({
     meta: {
         contactPerson: String,
         contactEmail: String,
-
     }
-  
+
 
 });
 
