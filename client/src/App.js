@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './Header';
+
 import Homepage from './Homepage';
 import Main from './Main';
 import Movie from './Movie';
@@ -26,7 +26,7 @@ class App extends Component {
          <Link to="/Favorites">Favorites!</Link>
 
          
-         <Header />
+         
 
         </nav>
           
