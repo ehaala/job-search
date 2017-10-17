@@ -119,11 +119,11 @@ a {
 
 h2 {
 	line-height: 1.2;
-	margin-bottom: 1.6rem;
+	margin-bottom: 1.8rem;
 }
 
 .wrapper {
-	max-width: 400px;
+	max-width: 800px;
 	margin: 50px auto;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -141,7 +141,7 @@ h2 {
 
 .radius { border-radius: 2px; }
 
-.padding-tb { padding-top: 1.6rem; padding-bottom: 1.6rem;}
+.padding-tb { padding-top: 1.8rem; padding-bottom: 1.8rem;}
 
 .shadowDepth0 { box-shadow: 0 1px 3px rgba(0,0,0, 0.12); }
 
@@ -158,11 +158,11 @@ h2 {
 
 .card {
 	background-color: #fff;
-	margin-bottom: 1.6rem;
+	margin-bottom: 1.8rem;
 }
 
 .card__padding {
-	padding: 1.6rem;
+	padding: 1.8rem;
 }
 
 .card__image {
@@ -199,9 +199,9 @@ h2 {
 /* card action */
 .card__action {
 	overflow: hidden;
-	padding-right: 1.6rem;
-	padding-left: 1.6rem;
-	padding-bottom: 1.6rem;
+	padding-right: 1.8rem;
+	padding-left: 1.8rem;
+	padding-bottom: 1.8rem;
 }
 
 .card__author {}
