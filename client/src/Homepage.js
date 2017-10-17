@@ -80,7 +80,6 @@ class Homepage extends Component {
                     <time>Post Date: {this.state.postDate}</time>
                 </div>
            
-          
 					<article className="card__article">
 						<h2><a>Title: {this.state.title}</a></h2>
               <p>Search key: {this.state.value}</p>
