@@ -3,35 +3,51 @@ import './index.css';
 
 
 class Homepage extends Component {
-  // constructor(props){
-	// 	super(props)
-	// 	this.state = {
-	// 	  jobs: []
-	
-	// 	}
-	// 	this.componentDidMount = this.componentDidMount.bind(this)
-	//   }
-	//   componentDidMount(){
-	// 	fetch('/jobs')
-	// 	  .then(response => response.json())
-	// 	  .then(response => this.setState({jobs: response}))
-		  
-	//   }
+  constructor(props) {
+    super(props)
+    this.state = {
+      title: "",
+      company: "",
+      location: "",
+      url: "",
+      value: "html"
+    }
+  }
+
+  componentDidMount() {
+    let url = "https://authenticjobs.com/api/?api_key=cbfee583fa92882f7d2472043cebdcd4&format=json&method=aj.jobs.search&keywords=";
+    let query = this.state.value;
+    let display = "&perpage=5";
+    let full = url + query + display;
+    fetch(full)
+      .then(response => response.json())
+      .then(response => this.setState({
+        title: response.listings.listing[0].title,
+        company: response.listings.listing[0].company.name,
+        location: response.listings.listing[0].company.location.name,
+        url: response.listings.listing[0].apply_url
+      }))
+  }
+
+  handleFormInput(e) {
+    this.setState({
+      value: e.target.value
+    })
+  }
+
   render() {
     return (
-      <div>
-      <h1 className="App"> This is the Homepage</h1>
-      {/* <ul className="App">
-       
-        {this.state.jobs.map((item, index) => (<li key={index}>{item.title} </li>))}
-        
-      </ul> */}
-
-      
-
-
-      </div>
-    )
+      <ul className="App">
+          <form >
+            <input type="text" onSubmit={(e) => this.handleFormInput(e)} />
+            <button type="submit">Search!</button>
+          </form>
+          <h1>Job Title: {this.state.title}</h1>
+          <h3>Company: {this.state.company}</h3>
+          <p>Location: {this.state.location}</p>
+          <p>Apply <a href={this.state.url} target="_blank">here!</a></p>
+      </ul>
+    );
   }
 }
 
