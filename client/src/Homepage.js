@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
+import Logo from './Logo';
 
 
 class Homepage extends Component {
@@ -42,6 +43,7 @@ class Homepage extends Component {
             <input type="text" onSubmit={(e) => this.handleFormInput(e)} />
             <button type="submit">Search!</button>
           </form>
+           <Logo />
           <h1>Job Title: {this.state.title}</h1>
           <h3>Company: {this.state.company}</h3>
           <p>Location: {this.state.location}</p>
