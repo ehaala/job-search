@@ -51,17 +51,7 @@ h3 {
 	margin-top: -150px;
 	
 }
-.belowImg{
-	position: relative;
-	top: 10px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding-left: 1em;
-	padding-right: 1em;
-	padding: 1.8rem;
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
-}
+
 .App {
 	text-align: center;
 }
@@ -268,6 +258,18 @@ h2 {
 		content: "\f00d";
 	}
 
+	.belowImg{
+		position: relative;
+		top: 10px;
+		max-width: 100%;
+		margin: 50px auto;
+		padding-left: 1em;
+		padding-right: 1em;
+		padding: 1.8rem;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+	}	
+	
 .share-icon {
 	display: inline-block;
 	width: 48px;
