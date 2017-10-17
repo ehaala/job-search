@@ -46,6 +46,9 @@ class Homepage extends Component {
           <h3>Company: {this.state.company}</h3>
           <p>Location: {this.state.location}</p>
           <p>Apply <a href={this.state.url} target="_blank">here!</a></p>
+          <form>
+            <button type="submit">Add to favorites</button>
+          </form>
       </ul>
     );
   }
