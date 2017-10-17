@@ -9,10 +9,8 @@ class Header extends Component {
       
       <div>
           
-       <form>
-       <input type="text" name="keyWord" value="key word" />
-  
- 
+       <form className="headForm">
+       <input type="text" name="keyWord"  value="key word" />__
         <input type="text" name="location" value="location" />
        </form>
           
