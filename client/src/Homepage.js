@@ -63,30 +63,43 @@ class Homepage extends Component {
 
   render() {
     return (
-      <div className="App">
-
-        <div className="card__image border-tlr-radius firstImg">
-        <img src="https://static.pexels.com/photos/27406/pexels-photo-27406.jpg" alt="animal" className="border-tlr-radius" />
-         
-        
+      <div className='App'>
+          <div className="card__image border-tlr-radius firstImg">
+          <img src="https://static.pexels.com/photos/27406/pexels-photo-27406.jpg" alt="animal" className="border-tlr-radius" />
             <form className="formOverImg" onSubmit={this.handleSubmit}>
-            <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Keywords"/>
-            <button type="submit">Search!</button>
+              <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Keywords"/>
+              <button type="submit">Search!</button>
           </form>
-          </div>
+        </div>
 
-         
-
+        <div className=" belowImg">
+            <div className="card radius shadowDepth1">
+                <div className="card__content card__padding">
+                <div className="card__meta">
+                  <a >Location: {this.state.location}</a>
+                    <time>Post Date: {this.state.postDate}</time>
+                </div>
            
-          <h1 className="belowImg">Job Title: {this.state.title}</h1>
-          <h3>Company: {this.state.company}</h3>
-          <p>Location: {this.state.location}</p>
-          <p>Post Date: {this.state.postDate}</p>
-          <p>Apply <a href={this.state.url} target="_blank">here!</a></p>
-          <form>
-            <button type="submit">Add to favorites</button>
-          </form>
-          <p>Search key: {this.state.value}</p>
+          
+					<article className="card__article">
+						<h2><a>Title: {this.state.title}</a></h2>
+              <p>Search key: {this.state.value}</p>
+              <p>Apply <a href={this.state.url} target="_blank">here!</a></p>
+					</article>
+                </div>
+
+					<div className="card__action">
+
+						<div className="card__author">
+							<img src="http://lorempixel.com/40/40/sports/" alt="user" />
+							<div className="card__author-content">
+              <h3>Company: {this.state.company}</h3>
+               <a>add to favorites</a>
+							</div>
+						</div>
+					</div>
+             </div>	            
+        </div>
       </div>
     );
   }

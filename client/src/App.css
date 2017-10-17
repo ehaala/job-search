@@ -52,7 +52,15 @@ h3 {
 	
 }
 .belowImg{
-	margin-top:50px;
+	position: relative;
+	top: 10px;
+	max-width: 100%;
+	margin: 50px auto;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding: 1.8rem;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 }
 .App {
 	text-align: center;
