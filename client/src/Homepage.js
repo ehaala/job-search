@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
-import Logo from './Logo';
+
 
 
 class Homepage extends Component {
@@ -64,14 +64,21 @@ class Homepage extends Component {
   render() {
     return (
       <ul className="App">
-          <h1>Job Search</h1>
-          <form onSubmit={this.handleSubmit}>
+
+        <div className="card__image border-tlr-radius firstImg">
+        <img src="https://static.pexels.com/photos/27406/pexels-photo-27406.jpg" alt="animal" className="border-tlr-radius" />
+         
+        
+            <form className="formOverImg" onSubmit={this.handleSubmit}>
             <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Keywords"/>
             <button type="submit">Search!</button>
           </form>
+          </div>
 
-           <Logo />
-          <h1>Job Title: {this.state.title}</h1>
+         
+
+           
+          <h1 className="belowImg">Job Title: {this.state.title}</h1>
           <h3>Company: {this.state.company}</h3>
           <p>Location: {this.state.location}</p>
           <p>Post Date: {this.state.postDate}</p>
