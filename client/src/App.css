@@ -46,6 +46,9 @@ h3 {
 	text-align: center;
 	padding:4px 8px 0;
 }
+.formOverImg{
+	margin-top: -30%;
+}
 .App {
 	text-align: center;
 }
@@ -170,6 +173,7 @@ h2 {
 		width: 100%;
 		max-width: 100%;
 		display: block;
+		max-height: 300px;
 	}
 
 .card__content {

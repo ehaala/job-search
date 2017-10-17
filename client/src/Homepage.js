@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
+import Logo from './Logo';
 
 
 class Homepage extends Component {
@@ -68,7 +69,9 @@ class Homepage extends Component {
             <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Keywords"/>
             <button type="submit">Search!</button>
           </form>
-          <h2>Job Title: {this.state.title}</h2>
+
+           <Logo />
+          <h1>Job Title: {this.state.title}</h1>
           <h3>Company: {this.state.company}</h3>
           <p>Location: {this.state.location}</p>
           <p>Post Date: {this.state.postDate}</p>
