@@ -57,7 +57,12 @@ class Homepage extends Component {
 
     return (
       <div className='App'>
-          <h1>Job Search</h1>
+        <div className="color">
+          <h1 >Job Search</h1>
+           {/*Can't get form working*/}
+           <input type="text" placeholder="California"/>
+          <button>Search!</button>
+        </div>
           {listings}
       </div>
     );

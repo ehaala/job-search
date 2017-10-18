@@ -29,6 +29,7 @@ class Movie extends Component {
 					<div className="card__action">
 
 						<div className="card__author">
+						<img src="http://images6.fanpop.com/image/photos/36800000/Mr-T-mrt-36834265-320-254.png" height="40px" alt="user" />
 							<a className="share-icon facebook" ><span className="fa fa-facebook"></span></a>  
 							<a href='https://twitter.com/shway250' className="share-icon twitter" ><span className="fa fa-twitter"></span></a>
 							<a className="share-icon googleplus" ><span className="fa fa-google-plus"></span></a>

@@ -36,8 +36,8 @@ class Items extends Component {
           <div className="card__action">
 
             <div className="card__author">
-              <img src="http://lorempixel.com/40/40/sports/" alt="user" />
-              <div className="card__author-content">
+            <img src="http://images6.fanpop.com/image/photos/36800000/Mr-T-mrt-36834265-320-254.png" height="40px" alt="user" />
+            <div className="card__author-content">
               <h3>Company: {this.state.company}</h3>
                <a href="#">add to favorites</a>
               </div>
