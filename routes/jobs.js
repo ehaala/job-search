@@ -15,6 +15,16 @@ router.get('/', function(req, res, next) {
   });
  });
 
-
+router.delete('Favorites', function(req, res, next) {
+  let deleteId = req.params.id;
+  Job.delete(
+    {id: deleteId},
+    (err, jobs) => {
+      if (err) console.log("err in Job.delete", err)
+      console.log(jobs);
+      res.send(jobs);
+    }
+  )
+})
 
 module.exports = router;
