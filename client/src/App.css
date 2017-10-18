@@ -11,6 +11,7 @@ nav{
     position: fixed;
     top: 0;
 	width: 100%;
+	z-index: 1;
 	
 }
 
@@ -51,17 +52,7 @@ h3 {
 	margin-top: -150px;
 	
 }
-.belowImg{
-	position: relative;
-	top: 10px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding-left: 1em;
-	padding-right: 1em;
-	padding: 1.8rem;
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
-}
+
 .App {
 	text-align: center;
 }
@@ -267,6 +258,18 @@ h2 {
 	.share-toggle.share-expanded:before {
 		content: "\f00d";
 	}
+
+	.belowImg{
+		position: relative;
+		top: 10px;
+		max-width: 100%;
+		margin: 50px auto;
+		padding-left: 1em;
+		padding-right: 1em;
+		padding: 1.8rem;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+	}	
 
 .share-icon {
 	display: inline-block;

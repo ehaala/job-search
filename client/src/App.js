@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
 import Homepage from './Homepage';
-import Main from './Main';
-import Movie from './Movie';
-import Food from './Food';
+import Main from './About';
+import Movie from './Contact';
 import Favorites from './Favorites';
 import {
   BrowserRouter as Router,
@@ -19,11 +18,9 @@ class App extends Component {
         <div>
         <nav >
         <Link to="/">Home</Link>{' '}
-         <Link to="/Main">See Our Main blog</Link>{' '}
-         <Link to="/Movie">See Our Movie blog!</Link>
-         <Link to="/Food">See Our Food blog!</Link>
-
-         <Link to="/Favorites">Favorites!</Link>
+         <Link to="/About">About us</Link>{' '}
+         <Link to="/Contact">Contact</Link>
+         <Link to="/Favorites">Saved Jobs</Link>
 
          
          
@@ -31,9 +28,8 @@ class App extends Component {
         </nav>
           
           <Route exact path="/" component={Homepage} />
-          <Route path="/main" component={Main} />
-          <Route path="/movie" component={Movie} />
-          <Route path="/food" component={Food} />
+          <Route path="/About" component={Main} />
+          <Route path="/Contact" component={Movie} />
           <Route path="/Favorites" component={Favorites} />
 
         </div>
