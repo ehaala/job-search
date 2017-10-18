@@ -23,7 +23,7 @@ class Items extends Component {
             <div className="card radius shadowDepth1">
                 <div className="card__content card__padding">
                 <div className="card__meta">
-                  <a >Location: {this.state.location}</a>
+                  <p>Location: {this.state.location}</p>
                     <time>Post Date: {this.state.postDate}</time>
                 </div>
            
