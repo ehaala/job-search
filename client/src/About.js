@@ -13,7 +13,10 @@ class Main extends Component {
           
 
 			<div className="card radius shadowDepth1">
-	    		<div className="card__content card__padding">
+				<div className="card__image border-tlr-radius">
+					<img src="http://images6.fanpop.com/image/photos/36800000/Mr-T-mrt-36834265-320-254.png" />
+				</div>
+					<div className="card__content card__padding">
 					<div className="card__meta">
 						<a >Built in 8 hours</a>
 							<time>...on 10/17/17</time>
@@ -29,9 +32,7 @@ class Main extends Component {
 
 						<div className="card__author">
 							<img src="http://lorempixel.com/40/40/sports/" alt="user" />
-							<div className="card__author-content">
-								possible <a>add to favorites</a>
-							</div>
+							
 						</div>
 					</div>
              </div>	            

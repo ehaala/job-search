@@ -11,6 +11,7 @@ nav{
     position: fixed;
     top: 0;
 	width: 100%;
+	z-index: 1;
 	
 }
 
@@ -269,7 +270,7 @@ h2 {
 		border-top-left-radius: 2px;
 		border-top-right-radius: 2px;
 	}	
-	
+
 .share-icon {
 	display: inline-block;
 	width: 48px;
