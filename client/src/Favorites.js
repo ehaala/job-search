@@ -17,7 +17,7 @@ class Favorites extends Component {
 
   componentDidMount() {
     fetch('/jobs')
-      .then(response => response.json())
+      // .then(response => response.json())
       .then(response => this.setState({favorites: response}))
 
   }
