@@ -9,7 +9,7 @@ class Homepage extends Component {
     super(props)
     this.state = {
       items: [],
-      value: 'california'
+      value: 'florida'
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -37,6 +37,7 @@ class Homepage extends Component {
   handleSubmit(e) {
     e.preventDefault();
     this.setState({
+      items: [],
       value: e.target.value
     });
     let url = "https://authenticjobs.com/api/?api_key=cbfee583fa92882f7d2472043cebdcd4&format=json&method=aj.jobs.search&keywords=";
@@ -57,12 +58,13 @@ class Homepage extends Component {
 
     return (
       <div className='App'>
-        <div className="color">
-          <h1 >Job Search</h1>
-           {/*Can't get form working*/}
-           <input type="text" placeholder="California"/>
-          <button>Search!</button>
-        </div>
+
+          <h1>Job Search</h1>
+           <form onSubmit={this.handleSubmit}>
+             <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Keywords"/>
+             <button type="submit">Search!</button>
+           </form>
+
           {listings}
       </div>
     );
