@@ -14,7 +14,7 @@ class Main extends Component {
 
 			<div className="card radius shadowDepth1">
 				<div className="card__image border-tlr-radius">
-					<img src="http://images6.fanpop.com/image/photos/36800000/Mr-T-mrt-36834265-320-254.png" />
+					<img src="http://images6.fanpop.com/image/photos/36800000/Mr-T-mrt-36834265-320-254.png" alt="animal" className="border-tlr-radius" />
 				</div>
 					<div className="card__content card__padding">
 					<div className="card__meta">
@@ -31,7 +31,7 @@ class Main extends Component {
 					<div className="card__action">
 
 						<div className="card__author">
-							<img src="http://lorempixel.com/40/40/sports/" alt="user" />
+							<img src="http://images6.fanpop.com/image/photos/36800000/Mr-T-mrt-36834265-320-254.png" height="40px" alt="user" />
 							
 						</div>
 					</div>

@@ -58,11 +58,13 @@ class Homepage extends Component {
 
     return (
       <div className='App'>
+
           <h1>Job Search</h1>
-        <form onSubmit={this.handleSubmit}>
+           <form onSubmit={this.handleSubmit}>
              <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Keywords"/>
              <button type="submit">Search!</button>
            </form>
+
           {listings}
       </div>
     );
