@@ -52,7 +52,7 @@ class Homepage extends Component {
     let full = url + query + display;
     fetch(full)
       .then(response => response.json())
-      .then(response => this.setState({
+      .then(response => response.listings.listing.length && this.setState({
         title: response.listings.listing[0].title,
         company: response.listings.listing[0].company.name,
         location: response.listings.listing[0].company.location.name,
@@ -63,7 +63,6 @@ class Homepage extends Component {
 
   render() {
     return (
-
       <div className='App'>
           <div className="card__image border-tlr-radius firstImg">
           <img src="https://static.pexels.com/photos/27406/pexels-photo-27406.jpg" alt="animal" className="border-tlr-radius" />
@@ -81,12 +80,15 @@ class Homepage extends Component {
                     <time>Post Date: {this.state.postDate}</time>
                 </div>
 
-                <article className="card__article">
-                  <h2><a>Title: {this.state.title}</a></h2>
-                    
-                    <p>Apply <a href={this.state.url} target="_blank">here!</a></p>
-                </article>
-                      </div>
+           
+          
+					<article className="card__article">
+						<h2><a>Title: {this.state.title}</a></h2>
+              <p>Search key: {this.state.value}</p>
+              <p>Apply <a href={this.state.url} target="_blank">here!</a></p>
+					</article>
+                </div>
+
 
                 <div className="card__action">
 

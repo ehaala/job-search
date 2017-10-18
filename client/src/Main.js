@@ -7,7 +7,7 @@ class Main extends Component {
 
     return (
       <div>
-      <h1> This is the Main Blog</h1>
+      <h1> About us</h1>
       	
 		<div className="wrapper">
           
@@ -15,14 +15,13 @@ class Main extends Component {
 			<div className="card radius shadowDepth1">
 	    		<div className="card__content card__padding">
 					<div className="card__meta">
-						<a >Location could go here</a>
-							<time>job posted date can go here</time>
+						<a >Built in 8 hours</a>
+							<time>...on 10/17/17</time>
 					</div>
 
 					<article className="card__article">
-						<h2><a>Job title should go here</a></h2>
-
-						<p>For more detials and application click here... sooo url link can go here</p>
+						<h2><a>Our story begins when..</a></h2>
+							<p>A father, is overly cautious with his son.  Who has a foreshortened arm. When his son goes on a field trip but gets too close to a dangerous area to prove himself, he is abducted. Horrified his father must set out to find him. A women who has a really short memory -- joins the father and complicates the encounters with sharks, jellyfish, and a host of ocean dangers. Meanwhile, his son plots his escape from his captors.</p>
 					</article>
                 </div>
 
